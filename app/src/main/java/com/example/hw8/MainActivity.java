@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),
                             "Sorry your device not supported",
                             Toast.LENGTH_SHORT).show();
+                    System.out.println("new commit worked!");
                 }
             }
         });

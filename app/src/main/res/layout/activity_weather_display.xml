@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1ECC3"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".WeatherDisplay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="429dp"
+        android:background="#F1ECC3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1ECC3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cityView"
+                android:layout_width="337dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="City:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#111E68" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:onClick="onTexttoSpeechClick"
+                android:src="@drawable/abc"
+                android:theme="@style/Base.TextAppearance.AppCompat" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tempView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Temp"
+            android:background="#F1ECC3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#111E68"/>
+
+        <TextView
+            android:id="@+id/tempmaxView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#111E68"
+            android:text="Temp Max" />
+
+        <TextView
+            android:id="@+id/tempminView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#111E68"
+            android:text="Temp Min" />
+
+        <TextView
+            android:id="@+id/descripView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Description"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#111E68"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:background="#F1ECC3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F1ECC3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="337dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#111E68"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:text="Listen for Weather Details: " />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="onTexttoSpeechDetClick"
+                    android:src="@drawable/abc"
+                    android:theme="@style/Base.TextAppearance.AppCompat" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/humidityView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#111E68"
+                android:gravity="center"
+                android:text="Humidity" />
+
+            <TextView
+                android:id="@+id/pressureView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#111E68"
+                android:gravity="center"
+                android:text="Pressure" />
+
+            <TextView
+                android:id="@+id/sunriseView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#111E68"
+                android:gravity="center"
+                android:text="Sunrise" />
+
+            <TextView
+                android:id="@+id/sunsetView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#111E68"
+                android:gravity="center"
+                android:text="Sunset" />
+
+            <TextView
+                android:id="@+id/lonView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#111E68"
+                android:gravity="center"
+                android:text="Longitude" />
+
+            <TextView
+                android:id="@+id/latView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#111E68"
+                android:gravity="center"
+                android:text="Latitude" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="33dp" />
+
+            <Button
+                android:id="@+id/mapButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:backgroundTint="#233078"
+                android:textColor="#ECDB4A"
+                android:onClick="onHistBtnClick"
+                android:text="Weather History" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:gravity="bottom|center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:ems="10"
+            android:gravity="bottom|center"
+            android:inputType="textPersonName"
+            android:text="Renuka Seepersad Z23375879" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+
+                android:layout_alignParentBottom="true"
+                app:backgroundTint="#233078"
+                app:itemIconTint="@android:color/white"
+                app:itemTextColor="@android:color/white"
+                app:menu="@menu/bottom_nav_menu">
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

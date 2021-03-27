@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HW8</string>
+    <string name="API_KEY">06a6f276deb466c80fa42b61c6920d1f</string>
+    <string name="WEATHER_URL">https://api.openweathermap.org/data/2.5/weather?q=QUERY_REPLACE&amp;appid=API_KEY_REPLACE&amp;units=imperial</string>
+    <string name="WEATHER_HIST_URL">https://api.openweathermap.org/data/2.5/onecall?lat=LAT_REPLACE&amp;lon=LON_REPLACE&amp;exclude=minutely,hourly&amp;appid=API_KEY_REPLACE&amp;units=imperial</string>
+    <string name="WEATHER__URL">https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=LAT_REPLACE&amp;lon=LON_REPLACE&amp;dt=TIME_REPLACE&amp;appid=API_KEY_REPLACE&amp;units=imperial</string>
+    <string name="WEATHER_ZIP_URL">https://api.openweathermap.org/data/2.5/weather?zip=QUERY_REPLACE&amp;appid=API_KEY_REPLACE&amp;units=imperial</string>
+    <string name="WEATHER_URL_GPS">https://api.openweathermap.org/data/2.5/weather?lat=LAT_REPLACE&amp;lon=LON_REPLACE&amp;appid=API_KEY_REPLACE&amp;units=imperial</string>
+    <string name="title_activity_weather_history">WeatherHistory</string>
+    <string name="hello_world">Hello Square World!</string>
+</resources>
